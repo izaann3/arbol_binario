@@ -3,7 +3,7 @@ package binario;
 /*public class ArbreBinari{}
 public class ArbreBinariEnters{}*/
 
-public class ArbreBinariStrings{
+class ArbreBinariStrings{
     private Node arrel;
 
     private static class Node{
@@ -23,4 +23,14 @@ public class ArbreBinariStrings{
     public void afegirderecha(String valor){
         arrel.derecha = new Node(valor);
     }
+}
+
+class Principal{
+        public static final void main(String[] args){
+            ArbreBinariStrings arbre = new ArbreBinariStrings("A");
+
+            arbre.afegirderecha("B");
+            arbre.afegirderecha("C");
+            arbre.afegirderecha("D");
+        }
 }
