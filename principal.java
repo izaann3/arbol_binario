@@ -7,5 +7,9 @@ public class Principal{
             arbre.afegirderecha("B");
             arbre.afegirderecha("C");
             arbre.afegirderecha("D");
+
+            arbre.afegirizquierda("D");
+            arbre.afegirizquierda("E");
+            arbre.afegirizquierda("F");
         }
 }
