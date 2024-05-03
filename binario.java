@@ -9,10 +9,12 @@ public class ArbreBinariStrings{
     private static class Node{
         private String valor;
         private Node derecha;
+        private Node izquierda;
 
         public Node(String Valor){
             this.valor = valor;
             this.derecha = null;
+            this.izquierda = null;
         }
     }
 
@@ -22,5 +24,9 @@ public class ArbreBinariStrings{
 
     public void afegirderecha(String valor){
         arrel.derecha = new Node(valor);
+    }
+
+    public void afegirizquierda(String valor){
+        arrel.izquierda = new Node(valor);
     }
 }
